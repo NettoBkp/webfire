@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
   var firebaseConfig = {
-    apiKey: `KEYFIRE`, 
+    apiKey: "AIzaSyDXQNAJtErwRQ8a7zQN38F85pY89fcWACI", 
     authDomain: "astiweb-a5d31.firebaseapp.com",
     databaseURL: "https://astiweb-a5d31.firebaseio.com",
     projectId: "astiweb-a5d31",
