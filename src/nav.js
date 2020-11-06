@@ -11,7 +11,7 @@ import Footer from './Footer';
 const Nav = ({ handleLogout }) => {
     return (
         <section className="hero">
-            <nav className="nav bd-grid">
+            <nav className="nav ">
                 <div>
                     <a href="#" className="nav__logo">Art System Ti</a>
                 </div>
