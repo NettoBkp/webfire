@@ -4,16 +4,21 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
-
+:root {
+  --first-color: #41c2d3;
+  --second-color: #d9d9d9;
+  --dark-color: #0b345a;
+  --ligth-color: #fff;
+}
 button {
   border: none;
   outline: none;
   width: 100%;
   padding: 15px 0;
-  color: #fff;
+  color: var(--ligth-color);
   font-size: 16px;
   letter-spacing: 1px;
-  background: #41c2d3;
+  background:  var(--first-color);
   cursor: pointer;
   border-radius: 10px;
 }
@@ -39,7 +44,7 @@ div .imgLayout {
   width: 100%;
   min-height: 100vh;
   padding: 0 20px;
-  background: #41c2d3;
+  background: var(--first-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +70,7 @@ div .imgLayout {
 }
 
 .login .loginContainer label {
-  color: white;
+  color: var(--ligth-color);
   margin: 14px 0;
   display: block;
   font-size: 22px;
@@ -79,7 +84,7 @@ div .imgLayout {
   font-size: 19px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.151);
-  color: #fff;
+  color: var(--ligth-color);
   letter-spacing: 1px;
   border-radius: 10px;
 }
@@ -92,11 +97,11 @@ div .imgLayout {
 .login .loginContainer .btnContainer p {
   margin: 14px 0 0 0;
   text-align: right;
-  color: #fff;
+  color: var(--ligth-color);
 }
 
 .login .loginContainer .btnContainer p span {
-  color: #41c2d3;
+  color: var(--first-color);
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-left: 5px;
@@ -115,7 +120,7 @@ div .imgLayout {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background: radial-gradient(
     ellipse at left bottom,
     rgba(42, 64, 97, 1) 0%,
@@ -125,7 +130,7 @@ div .imgLayout {
 }
 
 .hero nav {
-  background: #41c2d3;
+  background:  var(--second-color);
   width: 100%;
   padding: 20px 40px;
   display: flex;
@@ -134,11 +139,11 @@ div .imgLayout {
 }
 
 .hero nav h2 {
-  color: #fff;
+  color: var(--ligth-color);
 }
 
 .hero nav button {
   width: 86px;
   padding: 8px 0;
-  background: #2e4261;
+  background: var(--dark-color);
 }

@@ -4,6 +4,7 @@ import fire from "./fire";
 import Login from "./Login";
 import './css/login.css';
 import Hero from "./Hero";
+import Nav from "./nav";
 
 const App = () => {
   const [user, setUser] = useState("");
@@ -81,7 +82,8 @@ const App = () => {
   return (
     <div className="App">
       {user ? (
-        <Hero handleLogout={handleLogout} />
+        <Nav handleLogout={handleLogout} ></Nav>
+        
       ) : (
         <Login
         email={email}
