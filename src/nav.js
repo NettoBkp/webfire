@@ -4,7 +4,6 @@ import './css/styles.css';
 import './main';
 import './Hero';
 import './Footer';
-import { imgFunction } from './imgFunction';
 import Hero from './Hero';
 import Footer from './Footer';
 //*              <button onClick={handleLogout} >Sair</button>         *//

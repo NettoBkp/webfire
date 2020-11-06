@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/login.css';
 import { imgFunction } from './imgFunction';
-import Nav from './nav';
 
 const Hero = () => {
     return (
