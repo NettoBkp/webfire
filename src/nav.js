@@ -12,7 +12,7 @@ const Nav = ({ handleLogout }) => {
         <section className="hero">
             <nav className="nav ">
                 <div>
-                    <a href="#" className="nav__logo">Art System Ti</a>
+                    <a href="#home" className="nav__logo">Art System Ti</a>
                 </div>
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
@@ -21,7 +21,7 @@ const Nav = ({ handleLogout }) => {
                         <li className="nav__item"><a href="#skills" className="nav__link">Skills</a></li>
                         <li className="nav__item"><a href="#work" className="nav__link">Work</a></li>
                         <li className="nav__item"><a href="#contact" className="nav__link">Contact</a></li>
-                        <li className="nav__item"><a href="" onClick={handleLogout} className="nav__link">Logout</a></li>
+                        <li className="nav__item"><a href="#home" onClick={handleLogout} className="nav__link">Logout</a></li>
                     </ul>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
