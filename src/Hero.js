@@ -1,27 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { imgFunction } from './imgFunction';
 import Nav from './nav';
 import Footer from './Footer';
+import About from './About';
 //<button className="black " onClick={handleLogout} > Logout </button>
 
 const Hero = ({ handleLogout }) => {
     return (
-        <section className="hero">
-            <Nav handleLogout={handleLogout}/>
-           
-            <body className="row">
-                <div className="col s5">
-                 
-                 </div>
-                <div className="col s5 ">
-                    {imgFunction()}
-                   
-                </div>
+        <Fragment>
+            <header>
+            <Nav handleLogout={handleLogout} />
+            </header>
+            <body>
+            <About/>
             </body>
             <footer>
-                <Footer/>
-            </footer>            
-        </section>
+                <Footer />
+            </footer>
+        </Fragment>
     );
 };
 export default Hero;

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import img1 from './img/layout.png';
+import 'materialize-css/dist/css/materialize.min.css';
 import './css/login.css';
 import './css/lg.css';
 
@@ -52,13 +53,15 @@ const Login = (props) => {
                         {hasAccount ? (
                             <>
                                 <button
+                                        className="cyan" type="button" name="singup" value="Cadastrar"
                                     onClick={handleSingup}
                                 >
                                     Cadastrar
                         </button>
                                 <p>
-                                    Já tem uma conta ?
-                            <span
+                                    Já tem uma conta? <a />
+                                    <span
+                                        className="cyan-text"
                                         onClick={() => setHasAccount(!hasAccount)}
                                     >
                                         Entrar
@@ -68,14 +71,15 @@ const Login = (props) => {
                         ) : (
                                 <>
                                     <button
-                                        className="light-blue" type="button" name="login" value="Entrar"
+                                        className="cyan" type="button" name="login" value="Entrar"
                                         onClick={handleLogin}
                                     >
                                         Entrar
                         </button>
                                     <p>
-                                        Não tem um conta ?
-                            <span
+                                        Não tem um conta? <a />
+                                        <span
+                                            className="cyan-text"
                                             onClick={() => setHasAccount(!hasAccount)}
                                         >
                                             Cadastrar
@@ -84,7 +88,7 @@ const Login = (props) => {
                                 </>
                             )}
                     </div>
-                </form>               
+                </form>
             </div>
         </Fragment>
     )

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
 //*              <button onClick={handleLogout} >Sair</button>         *//
 
 const Nav = ({ handleLogout }) => {
@@ -11,7 +10,7 @@ const Nav = ({ handleLogout }) => {
                 <li class="divider"></li>
                 <li><a href="#!">three</a></li>
             </ul> 
-            <nav>
+            <nav className="">
                 <div className="nav-wrapper cyan">
                     <a href="#!" onClick={handleLogout} className="brand-logo">Domingos Netto</a>
                     <ul className="right hide-on-med-and-down">

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Footer = () => {
     return (
-        <section>
+        <Fragment>    
             <footer className="row">
-            <div className=" black col s12">
-            <p className=" col s12">Domingos Netto</p>
+            <div className="col s12">
+            <p className="col s12">Domingos Netto</p>
             
                 <a href="https://www.facebook.com/artsystemti" className="material-icons"><i className='bx bxl-facebook' ></i></a>
                 <a href="https://br.pinterest.com/artsystemti/" className="material-icons"><i className='bx bxl-pinterest' ></i></a>
@@ -16,7 +16,7 @@ const Footer = () => {
             <p className=" col s12">&#169; 2020 copyright all right reserved</p>
             </div>
             </footer> <script src="https://artsystemti.com/"></script>
-        </section>
+        </Fragment>
     );
 };
 export default Footer;
