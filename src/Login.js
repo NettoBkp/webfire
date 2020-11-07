@@ -59,7 +59,7 @@ const Login = (props) => {
                                     Cadastrar
                         </button>
                                 <p>
-                                    Já tem uma conta? <a />
+                                    Já tem uma conta? 
                                     <span
                                         className="cyan-text"
                                         onClick={() => setHasAccount(!hasAccount)}
@@ -77,7 +77,7 @@ const Login = (props) => {
                                         Entrar
                         </button>
                                     <p>
-                                        Não tem um conta? <a />
+                                        Não tem um conta?
                                         <span
                                             className="cyan-text"
                                             onClick={() => setHasAccount(!hasAccount)}

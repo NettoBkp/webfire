@@ -18,7 +18,7 @@ const About = () => {
 - Domingos Netto</p>
                         </div>
                         <div className="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#home">This is a link</a>
                         </div>
                     </div>
                 </div>
