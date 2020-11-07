@@ -10,7 +10,7 @@ const About = () => {
                 <div className="col s12 m7">
                     <div className="card">
                         <div className="card-image">
-                            <img className="col s2" src={img1} />
+                            <img className="col s2" src={img1} alt="img Card" />
                             <span className="card-title">Card Title</span>
                         </div>
                         <div className="card-content">

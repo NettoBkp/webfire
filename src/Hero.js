@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { imgFunction } from './imgFunction';
 import Nav from './nav';
 import Footer from './Footer';
 import About from './About';
