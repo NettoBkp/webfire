@@ -1,9 +1,10 @@
 /* eslint-disable default-case */
 import React, { useEffect, useState } from "react";
+import 'materialize-css/dist/css/materialize.min.css';
 import fire from "./fire";
 import Login from "./Login";
-import './css/login.css';
-import Nav from "./nav";
+import Hero from "./Hero";
+
 
 
 const App = () => {
@@ -43,7 +44,10 @@ const App = () => {
         }
       });
   };
+
+  
   const handleSingup = () => {
+    
     clearErrors();
     fire
       .auth()
@@ -66,6 +70,7 @@ const App = () => {
   };
 
   const authListener = () => {
+    
     fire.auth().onAuthStateChanged((user) => {
       if (user) {
         clearInputs();
@@ -77,26 +82,26 @@ const App = () => {
   };
   useEffect(() => {
     authListener();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="App">
       {user ? (
-        <Nav handleLogout={handleLogout} ></Nav>        
+        <Hero handleLogout={handleLogout} ></Hero>
       ) : (
-        <Login
-        email={email}
-        setEmail={setEmail}
-        password={password}
-        setPassword={setPassword}
-        handleLogin={handleLogin}
-        handleSingup={handleSingup}
-        hasAccount={hasAccount}
-        setHasAccount={setHasAccount}
-        emailError={emailError}
-        passwordError={passwordError}
-      />
-      )}           
+          <Login
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSingup={handleSingup}
+            hasAccount={hasAccount}
+            setHasAccount={setHasAccount}
+            emailError={emailError}
+            passwordError={passwordError}
+          />
+        )}
     </div>
   )
 };

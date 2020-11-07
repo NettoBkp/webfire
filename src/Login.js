@@ -1,6 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { Fragment } from 'react';
 import img1 from './img/layout.png';
+import './css/login.css';
+import './css/lg.css';
+
+// <p className="errorMsg">{emailError}</p>
 
 const Login = (props) => {
     const {
@@ -16,66 +20,73 @@ const Login = (props) => {
         passwordError,
     } = props;
     return (
-        <section className="login">
-            
-            <div className="loginContainer">
-            <img className="imgLogin" src={img1} />
-                <label>Nome</label>
-                <input
-                    type="text"
-                    autoFocus
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <p className="errorMsg">{emailError}</p>
-                <label>Password</label>
-                <input
-                    type="password"
-                    autoFocus
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-                <p className="errorMsg">{passwordError}</p>
-                <div className="btnContainer">
-                    {hasAccount ? (
-                        <>
-                        <button
-                        onClick={handleSingup}
-                        > 
-                            Cadastrar
-                        </button>
-                        <p>
-                            Já tem uma conta ?
-                            <span
-                            onClick={() => setHasAccount(!hasAccount)}
-                            >
-                                Entrar
-                            </span>
-                        </p>
-                        </>
-                    ) : (
-                        <>
-                        <button
-                        onClick={handleLogin}
-                        > 
-                            Entrar
-                        </button>
-                        <p>
-                            Não tem um conta ?
-                            <span
-                            onClick={() => setHasAccount(!hasAccount)}
-                            >
-                                Cadastrar
-                            </span>
-                        </p>
-                        </>                        
-                    )}
+        <Fragment className="container">
 
-                </div>
+            <div className="row">
+
+                <form className="box">
+                    <img className="imgLogo" src={img1} />
+                    <p className="">{emailError}</p>
+
+                    <br />
+                    <div className="inputBox">
+                        <input className="MyBt" type="text" name="username"
+                            autoFocus
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)} />
+
+                        <label>Usuário: </label>
+                    </div>
+                    <br />
+                    <div className="inputBox">
+                        <input className="MyBt" type="password" name="password"
+                            required
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)} />
+
+                        <label>Senha: </label>
+                    </div>
+                    <p className="errorMsg">{passwordError}</p>
+                    <div className="btnContainer">
+                        {hasAccount ? (
+                            <>
+                                <button
+                                    onClick={handleSingup}
+                                >
+                                    Cadastrar
+                        </button>
+                                <p>
+                                    Já tem uma conta ?
+                            <span
+                                        onClick={() => setHasAccount(!hasAccount)}
+                                    >
+                                        Entrar
+                            </span>
+                                </p>
+                            </>
+                        ) : (
+                                <>
+                                    <button
+                                        className="light-blue" type="button" name="login" value="Entrar"
+                                        onClick={handleLogin}
+                                    >
+                                        Entrar
+                        </button>
+                                    <p>
+                                        Não tem um conta ?
+                            <span
+                                            onClick={() => setHasAccount(!hasAccount)}
+                                        >
+                                            Cadastrar
+                            </span>
+                                    </p>
+                                </>
+                            )}
+                    </div>
+                </form>               
             </div>
-        </section>
+        </Fragment>
     )
 }
 

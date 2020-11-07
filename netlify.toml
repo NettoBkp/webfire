@@ -5,6 +5,7 @@
 
 [build.environment]
   KEYFIRE = "AIzaSyDXQNAJtErwRQ8a7zQN38F85pY89fcWACI"
+  KEYTRACER = "c3bb49f3c53549ce903f65141dbb9632@o473118"
 
   [build.processing]
   skip_processing = false

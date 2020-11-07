@@ -1,20 +1,28 @@
 import React from 'react';
-import './css/login.css';
 import { imgFunction } from './imgFunction';
+import Nav from './nav';
+import Footer from './Footer';
+//<button className="black " onClick={handleLogout} > Logout </button>
 
-const Hero = () => {
+const Hero = ({ handleLogout }) => {
     return (
         <section className="hero">
+            <Nav handleLogout={handleLogout}/>
            
-            <body>
-                <div className="layoutB">
+            <body className="row">
+                <div className="col s5">
+                 
+                 </div>
+                <div className="col s5 ">
                     {imgFunction()}
+                   
                 </div>
             </body>
+            <footer>
+                <Footer/>
+            </footer>            
         </section>
-
     );
-
 };
 export default Hero;
 
