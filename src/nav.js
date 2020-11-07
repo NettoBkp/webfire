@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-import './main';
 //*              <button onClick={handleLogout} >Sair</button>         *//
 
 const Nav = ({ handleLogout }) => {
