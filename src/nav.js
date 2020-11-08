@@ -1,3 +1,6 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-redeclare */
+/* eslint-disable no-unused-vars */
 import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 
@@ -79,7 +82,7 @@ class Nav extends Component {
                                     </div>
                                 </div>
                             </li>
-                             <li><a href="#" ><i className="material-icons">logout</i>Sair</a></li>
+                             <li><a href="#sair" ><i className="material-icons">logout</i>Sair</a></li>
                         </ul>
 
             </Fragment>
