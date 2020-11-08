@@ -4,7 +4,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
 
 //*              <button onClick={handleLogout} >Sair</button>         *//
-var instances, elems;
 
 class Nav extends Component {
     constructor(props) {

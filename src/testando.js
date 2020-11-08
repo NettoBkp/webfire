@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
 //var datas = [];
-var instances, elems;
 
 class Teste extends Component {
     constructor(props) {
