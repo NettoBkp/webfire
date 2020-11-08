@@ -5,8 +5,6 @@ import fire from "./fire";
 import Login from "./Login";
 import Hero from "./Hero";
 
-
-
 const App = () => {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");

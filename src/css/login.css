@@ -10,9 +10,6 @@
   --dark-color: #0b345a;
   --ligth-color: #fff;
 }
-.ilike-blue-container {
-  @extend .blue-text, .text-lighten-4;
-}
 body {
   background: url(../img/layout5.png) no-repeat;
   background-size: cover;  
@@ -44,11 +41,9 @@ body input {
   border-radius: 10px;    
 }
 header{
-  background-color: var(--dark-color); 
-  background-size: cover;    
-  padding: 10px;
+  background-color: var(--second-color); 
   text-align: center;
-  color: var(--ligth-color); 
+  color: var(--dark-color); 
 }
 footer {
   margin-top: 20px;

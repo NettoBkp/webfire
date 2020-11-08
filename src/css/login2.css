@@ -6,9 +6,9 @@
 }
 :root {
   --first-color: #41c2d3;
-  --second-color: #d9d9d9;
+  --second-color: #cfd8dc;
   --dark-color: #0b345a;
-  --ligth-color: #fff;
+  --ligth-color: #ffffff;
 }
 button {
   border: none;

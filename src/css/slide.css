@@ -1,0 +1,77 @@
+.slidershow{
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+.slidershow .middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.ab{
+  display: flex;
+}
+.slides{        
+  display: flex;
+  transition: 0.6s;
+}  
+.slides:hover{        
+  padding-top: 6px;        
+  transition: 0.6s;
+}  
+.slides img{    
+  width: 90px; 
+  height: auto;       
+}
+.LogoEinst{        
+  display: flex;
+  padding-left: 1px;
+  transition: 0.6s;
+}  
+.LogoEinst:hover{        
+  padding-top: 2px;        
+  transition: 0.6s;
+}  
+.LogoEinst img{    
+  width: 55px; 
+  height: auto;       
+}    
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}

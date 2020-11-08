@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
 import img1 from './img/layout3.png';
+
 // <img className="col s2" src={img1} />
 
 const About = () => {
     return (
         <Fragment>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
 <div className="row">
             <div className="col s12">
                 <div className="col s12 m7">
@@ -24,6 +27,21 @@ const About = () => {
                 </div>
             </div>
             </div>
+
+            <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
         </Fragment>
     );
 };

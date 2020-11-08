@@ -5,12 +5,14 @@ import About from './About';
 //<button className="black " onClick={handleLogout} > Logout </button>
 
 const Hero = ({ handleLogout }) => {
+    
     return (
         <Fragment>
             <header>
             <Nav handleLogout={handleLogout} />
             </header>
             <body>
+                
             <About/>
             </body>
             <footer>
