@@ -10,8 +10,7 @@ import './css/lg.css';
 const LoginPg = (props) => {
     
     const {
-        sign_in_btn = document.querySelector("#sign-in-btn"),
-        sign_up_btn = document.querySelector("#sign-up-btn"),
+       
         container = document.querySelector(".container"),
         
     } = props;
