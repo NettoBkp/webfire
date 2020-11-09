@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import img1 from './img/layout.png';
 import 'materialize-css/dist/css/materialize.min.css';
 import './css/login.css';
-import './css/lg.css';
 
 // <p className="errorMsg">{emailError}</p>
 

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Nav from './nav';
 import Footer from './Footer';
-import About from './About';
+import LoginPg from './LoginPg1';
 //<button className="black " onClick={handleLogout} > Logout </button>
 
 const Hero = ({ handleLogout }) => {
@@ -12,8 +12,7 @@ const Hero = ({ handleLogout }) => {
             <Nav handleLogout={handleLogout} />
             </header>
             <body>
-                
-            <About/>
+                <LoginPg/>
             </body>
             <footer>
                 <Footer />
